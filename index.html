@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="prime-logo" href="https://github.com/artigencia">Remember<span>That</span></a>
+            <img id="nav-menu-cta" class="nav-menu-app" src="assets/images/navigation-menu-app.svg" alt="Navigation Menu">
+            <nav>
+                <img id="nav-menu-exit" class="nav-menu-exit" src="assets/images/navigation-menu-exit.svg" alt="">
+                <ul class="primary-navigation">
+                    <li class="pn-home"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-navigation">
+                    <li><a href="#">Contact</a></li>
+                    <li class="sn-go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="main-frame">
+        <div class="container">
+            <div class="left-segment">
+                <p class="mf-ls-header">It's Niffty &amp; Gritty</p>
+                <h1>A Task App that doesn't Stink</h1>
+
+                <div class="ls-bottom">
+                    <a href="#" class="primary-ls-bottom">Try for free</a>
+                    <a href="#" class="secondary-ls-bottom">
+                        <img src="assets/images/video-tutorial.svg" alt="Watch Video Tutorial">
+                        Watch a Video
+                    </a>
+                </div>
+            </div>
+
+            <img src="assets/images/illustration.svg" class="rg-illustration" alt="Illustration">
+        </div>
+    </section>
+    
+    <section class="featured-segment">
+        <div class="container">
+            <ul class="featured-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaborations</li>
+                <li>Other Awesome Features</li>
+            </ul>
+            <img src="assets/images/man-holding-phone-bg.jpg" alt="Man Holding Phone BG">
+        </div>
+    </section>
+
+    <section class="testimonial-segment">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="assets/images/testimonial-user-profile.jpeg" alt="Testimonial User Profile">
+                    <blockquote></blockquote>
+                    <cite>- Marcus Wade</cite>
+                </li>
+                <li>
+                    <img src="assets/images/testimonial-user-profile.jpeg" alt="Testimonial User Profile">
+                    <blockquote></blockquote>
+                    <cite>- Mitchell Warner</cite>
+                </li>
+                <li>
+                    <img src="assets/images/testimonial-user-profile.jpeg" alt="Testimonial User Profile">
+                    <blockquote></blockquote>
+                    <cite>Mathew Stoinis</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-segment">
+        <div class="container">
+            <div class="contact-left-frame">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Waiting for Your Message"></textarea>
+                    <input type="submit" class="submit-form" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-right-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29814.079831904302!2d74.7368222954778!3d20.92197415320305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdec5a056880fdf%3A0x5786eb6df636eb45!2sWalwadi%2C%20Maharashtra%20424002!5e0!3m2!1sen!2sin!4v1637500266906!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuButton = document.getElementById('nav-menu-cta')
+              nav = document.querySelector('nav')
+              menuButtonExit = document.getElementById('nav-menu-exit');
+        
+        menuButton.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        menuButtonExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
